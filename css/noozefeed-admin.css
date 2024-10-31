@@ -1,0 +1,1485 @@
+rtab
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	color: #5cb85c;
+}
+
+h1 {
+	font-size: 150%;
+}
+
+.shortcodePlug{
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    color: #5cb85c;
+    font-size: 140%;
+}
+
+.curateToggle{
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    color: #5cb85c;
+    font-size: 90%;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+iframe {
+        width:100%; 
+        max-width:805px;
+        height:500px;
+        background-color: #e0e0e0;
+        border: solid;
+        border-radius: 10px 10px 10px 10px;
+        overflow: hidden;
+        border-width: 5px;
+        border-color: #e0e0e0;
+        padding: 5px;
+    }
+    
+    .tabBorder {
+        width: 95%;
+        max-width: 1600px;
+        margin: auto;
+    }
+   
+
+/* Tables
+================================== */
+.Rtable {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 0;
+}
+
+.Rtable-cell {
+  text-align: right;
+  margin: auto;
+  display: inline-block;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  flex-grow: 1;
+  padding: 0.8em 1.2em;
+  overflow: hidden;
+  list-style: none;
+  border: solid @bw white;
+  background: fade(slategrey,20%);
+}
+
+.Rtable-settings {
+  text-align: right;
+  margin: auto;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  flex-grow: 1;
+  padding: 0.8em;
+  overflow: hidden;
+  list-style: none;
+  border: solid @bw white;
+  background: fade(slategrey,20%);
+}
+
+.Rtable-data {
+  text-align: left;
+  vertical-align: top;
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+  padding: 5px;
+  overflow: hidden;
+  list-style: none;
+  border: solid @bw white;
+  background: fade(slategrey,20%);
+  > data { text-align: left; }
+}
+
+.Rtable-frame {
+    width:100%; 
+    background-color: #ffe6f3;
+    border: solid;
+    border-width: 15px 0px 15px 0px;
+    border-color: #e0e0e0;
+    text-align: left;
+    vertical-align: top;
+    box-sizing: border-box;
+    flex-grow: 1;
+    overflow: hidden;
+    list-style: none;
+    > data { text-align: left; }
+}
+
+.Rtable-map {
+  padding-top: 5px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-content: center; 
+  width:800px; 
+  max-width:100%;
+  vertical-align: top;
+  box-sizing: border-box;
+  flex-grow: 1;
+  overflow: hidden;
+  list-style: none;
+  border: solid @bw white;
+  background: fade(slategrey,20%);
+}
+
+.Rtable-geo{
+    text-align: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.Rtable-radioText{
+    text-align: right;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.Rtable-radio{
+    padding-left: 15px;
+    max-width: 40%;
+    text-align: left;
+    align-content: left;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+
+.Rtable-slideRadio{
+    max-width: 40%;
+    text-align: center;
+    align-content: center;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    margin: 0 auto;
+}
+
+.Rtable-resultsText{
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.Rtable-results{
+    width:180px;
+    text-align: center;
+    align-content: center;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+
+.Rtable-check {
+  text-align: right;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+.Rtable-icon {
+  text-align: right;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+.Ftable {
+  display: flex;
+  width: 100%;
+  /*max-width: 1000px;*/
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 70px 0 0;
+}
+
+.Ftable-cell {
+  text-align: right;
+  align-content: right;
+  padding-left: 5px;
+  padding-top: 2px;
+  display: inline-block;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-size: 85%;
+  flex-grow: 1;
+  width: 100%;
+  overflow: hidden;
+  list-style: none;
+  border: solid @bw white;
+  background: fade(slategrey,20%);
+  padding-top: 10px;
+  > h1, > h2, > h3, > h4, > h5, > h6 {  margin: 0; vertical-align: bottom; width: 30%}
+  > img {
+      width: 50%;
+      height: 50%;
+  }
+}
+
+
+.Ftable-data {
+  text-align: left;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin-top: 15px;
+  flex-grow: 1;
+  width: 100%;
+  overflow: hidden;
+  list-style: none;
+  border: solid @bw white;
+  background: fade(slategrey,20%);
+  padding-top: 10px;
+  > data { text-align: left; }
+}
+
+.Rtable-color {
+  vertical-align: top;
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+  padding: 10px;
+}
+
+.Rtable-colorText {
+  text-align: right;
+  vertical-align: top;
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+  padding: 10px;
+}
+
+.Rtable-displayColor {
+  padding-top: 5px;
+  margin: 0 auto; 
+  align-content: center; 
+  width:500px; 
+  max-width:100%;
+  margin: auto;
+  vertical-align: top;
+  top: 0px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  overflow: hidden;
+  list-style: none;
+  border: solid @bw white;
+  background: fade(slategrey,20%);
+}
+
+.Rtable-displaySettings {
+  padding-top: 5px;
+  margin: 0 auto; 
+  align-content: center; 
+  width:500px; 
+  max-width:100%;
+  margin: auto;
+  vertical-align: top;
+  top: 0px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  overflow: hidden;
+  list-style: none;
+  border: solid @bw white;
+  background: fade(slategrey,20%);
+}
+
+Rtable-logo{
+    
+}
+Rtable-feedback{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.Rtable-valueProp  {
+    text-align: center; 
+    font-size: 120%;
+    font-weight: bold;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+.Rtable-valueHead  { 
+    font-weight: bold;
+    font-size: 120%;
+    color: #5cb85c;
+}
+.Rtable-valueTag  { 
+    padding: 0px 15px 0px 15px;
+    font-size: 120%;
+    font-weight: bold;
+    color: #5cb85c;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+.Rtable-valueSpace  {
+    padding-top: 10px;
+}
+
+.Rtable--6cols { max-width: 800px;}
+
+/* Table column sizing
+================================== */
+.Rtable--1cols > .Rtable-cell  { width: 100%; }
+.Rtable--2cols > .Rtable-cell  { width: 30%; }  /* allowance for entry field */
+.Rtable--3cols > .Rtable-cell  { width: 33.33%; }
+.Rtable--4cols > .Rtable-cell  { width: 25%; }
+.Rtable--5cols > .Rtable-cell  { width: 20%; }
+.Rtable--6cols > .Rtable-cell  { width: 16.6%; }
+
+
+/* Table column sizing
+================================== */
+.Rtable--1cols > .Rtable-data  { width: 100%; }
+.Rtable--2cols > .Rtable-data  { width: 70%; }  /* allowance for entry field */
+.Rtable--3cols > .Rtable-data  { width: 33.33%; }
+.Rtable--4cols > .Rtable-data  { width: 25%; }
+.Rtable--5cols > .Rtable-data  { width: 20%; }
+.Rtable--6cols > .Rtable-data  { width: 16.6%; }
+
+/* Table column sizing
+================================== */
+.Rtable--3cols > .Rtable-tool  { width: 10%; }
+
+/* Table column sizing
+================================== */
+.Rtable--2cols > .Rtable-map  { width: 50%; margin: 0 auto; }
+.Rtable--3cols > .Rtable-map  { width: 33%; margin: 0 auto; }
+
+/* Table column sizing
+================================== */
+.Rtable--2cols > .Rtable-radio  { width: 50%; margin: 0 auto; }
+.Rtable--2cols > .Rtable-radioText  { width: 50%; margin: 0 auto; }
+.Rtable--3cols > .Rtable-radio  { width: 33%; margin: 0 auto; }
+.Rtable--3cols > .Rtable-radioText  { width: 33%; margin: 0 auto; }
+.Rtable--3cols > .Rtable-SlideRadio  { width: 33%; margin: 0 auto; }
+.Rtable--6cols > .Rtable-radio  { width: 11.11%; }
+
+/* Table column sizing
+================================== */
+.Rtable--3cols > .Rtable-frame  { width: 33.33%; }
+
+/* Table column sizing
+================================== */
+.Rtable--2cols > .Rtable-results  { margin: 0 auto; }
+.Rtable--2cols > .Rtable-resultsText  { width: 50%; margin: 0 auto; }
+
+/* Table column sizing
+================================== */
+.Rtable--2cols > .Rtable-geo  { width: 80%; }
+.Rtable--6cols > .Rtable-geo  { width: 22.22%; }
+
+
+/* Table column sizing
+================================== */
+.Ftable--4cols > .Ftable-cell  { width: 25%; }
+.Ftable--4cols > .Ftable-data  { width: 25%; }
+.Ftable--6cols > .Ftable-cell  { width: 16.6%; }
+.Ftable--6cols > .Ftable-data  { width: 16.6%;  max-width: 80px;}
+.Ftable--8cols > .Ftable-cell  { margin: 0 auto; width: 12.5%; }
+.Ftable--8cols > .Ftable-data  { margin: 0 auto; width: 12.5%; max-width: 80px;}
+.Ftable--10cols > .Ftable-cell  { margin: 0 auto; padding-right: 10px; width: 8%; }
+.Ftable--10cols > .Ftable-data  { margin: 0 auto; width: 12%; max-width: 80px;}
+
+/* Table column sizing
+================================== */
+.Rtable--1cols > .Rtable-check  { width: 100%; }
+.Rtable--2cols > .Rtable-check  { width: 30%; }  /* allowance for entry field */
+.Rtable--3cols > .Rtable-check  { width: 33.33%; }
+.Rtable--4cols > .Rtable-check  { width: 25%; }
+.Rtable--5cols > .Rtable-check  { width: 20%; }
+.Rtable--6cols > .Rtable-check  { width: 15%; }
+.Rtable--6cols > .Rtable-icon  { width: 15%; }
+
+/* Table column sizing
+================================== */
+.Rtable--2cols > .Rtable-color  { width: 50%; }
+.Rtable--2cols > .Rtable-colorText  { width: 50%; }
+
+/* Table column sizing
+================================== */
+.Rtable--3cols > .Rtable-displayColor  { width: 40%; margin: 0 auto; }
+.Rtable--3cols > .Rtable-displaySettings  { width: 30%; margin: 0 auto; }
+
+/* Table column sizing
+================================== */
+.Rtable--2cols > .Rtable-feedback  { width: 40%; margin: 0 auto; }
+.Rtable--2cols > .Rtable-logo  { width: 60%; margin: 0 auto; }
+
+/* Table column sizing
+================================== */
+.Rtable--1cols > .Rtable-settings  { width: 100%; }
+.Rtable--2cols > .Rtable-settings  { width: 40%; }
+
+/* Table column sizing
+================================== */
+.Rtable--3cols > .Rtable-valueProp  { width: 20%; margin: 0 auto; }
+.Rtable--3cols > .Rtable-valueHead  { width: 50%; margin: 0 auto; }
+.Rtable--3cols > .Rtable-valueTag  { width: 60%; margin: 0 auto; }
+.Rtable--3cols > .Rtable-valueSpace  { width: 20%; margin: 0 auto; }
+
+
+.divValueSettings {
+    line-height: 120%;
+    > a {
+        color: #5cb85c;
+    } 
+}
+
+.divLfOffer {
+	padding: 10px;
+	display: block;
+	margin: auto;
+	background-color: #f8f8f8;
+	border-radius: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 { margin-top: 2px; }
+h3 { font-size: 1.2em; }
+h4 { font-size: 1em; }
+strong { color: darken(slategrey,20%); }
+
+.no-flexbox .Rtable {
+  display: block;
+  > .Rtable-cell { width: 100%; }
+  > .Rtable-cell--foot { margin-bottom: 1em; }
+}
+
+.nf-banner {
+	display: block;
+	margin: auto;
+	width: 45%;
+        max-width: 400px;
+	margin-left:auto; 
+	margin-right:auto;
+}
+
+.nf-logo {
+	display: block;
+	margin-right: auto;
+	width: 100%;
+        max-width: 400px;
+}
+
+.divTag a {
+        color: #5cb85c !important;
+     }
+     
+.divTag{
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+        margin-bottom: 20px;
+	width: 95%;
+	text-align: center; 
+	font-size: 200%;
+        font-stretch: 2px;
+	font-weight: 2px;
+	min-height: 40px;
+	line-height: 120%;
+	font-weight: bold;	
+}
+
+.rTableHead { 
+    	color: #5cb85c;
+        line-height: 120%;
+	font-size: 150%;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-stretch: 4px;
+        margin: auto;
+        text-align: center;
+        padding: 10px;
+}
+
+.clickButton {
+    margin: 0 auto; 
+    width: 100%;
+    max-width: 800px;
+}
+
+.searchField {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+input[type=submit] {
+    margin: 10px;
+    background-color: #5cb85c; 
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 150%;
+    font-weight: bold;
+    width: 95%;
+} 
+
+input[type=search] {
+    margin-top: 10px;
+    background-color: #5cb85c; 
+    border: none;
+    border-radius: 15px;
+    border-width: 5px; 
+    border-style: solid;
+    border-color: #e0e0e0;
+    color: white;
+    padding: 12px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 150%;
+    font-weight: bold;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input[type=clipboard] {
+    margin: 10px;
+    background-color: #5cb85c; 
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 5px;
+    /*margin: 20px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    width:120px;
+}
+
+input[type="radio"]:checked ~ .check {
+  border: 5px solid #5cb85c;
+}
+
+input[type="radio"]:checked ~ .check::before{
+  background: #5cb85c;
+}
+
+input[type=text] {
+    text-align: left;
+    width: 600px; 
+    height: 40px;
+    max-width: 100%;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-color: #e0e0e0;
+    border-width: 5px;
+    background-color: #fff;
+    box-shadow: none !important;
+    font-size: 120%;
+    color: #808080;
+}
+
+input[type=textTable] {
+    width: 100px; 
+    max-width: 100%;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-color: #e0e0e0;
+    border-width: 5px;
+    background-color: #fff;
+    box-shadow: none !important;
+    color: #808080;
+}
+
+input[type=geo] {
+    text-align: center;
+    width: 100%; 
+    max-width: 100%;
+    padding: 5px 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-width: 5px;
+    border-color: #d0daea;
+    background-color: #d0daea;
+}
+
+input[type=account] {
+    text-align: center;
+    width: 600px; 
+    max-width: 100%;
+    padding: 10px 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-style: none;
+    background-color: #e0e0e0;
+    font-weight: bold;
+    font-size: 120%;
+    font-spacing: 2px;
+    color: #808080;
+}
+input[type=mapResults] {
+    text-align: center;
+    width: 50px; 
+    max-width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-style: none;
+    color: #808080;
+}
+input[type=checkbox] {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    border-radius: 10px 10px 10px 10px;
+    border-color: #e0e0e0;
+    border-width: 10px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: #808080;
+}
+
+.shortcodeSnippetHead {
+    font-size: 100%;
+    margin-bottom: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/*------------------------------TEXT HOVER SEARCH---------------------------------*/
+
+.NFsearchHelp{
+}
+
+span#nf_search{
+    height:auto;
+    text-align: left;
+    padding-left: 10px; 
+    /*margin:1.563em auto;*/
+}
+
+span#nf_search a{
+    text-decoration:none;
+    color:black;
+    cursor:default;
+    font-weight:normal;
+}
+
+span#nf_search a span{
+    position: absolute;
+    visibility:hidden;
+    text-align: left;
+    font-size: 85%;
+    background:#808080;
+    color: #FFF;
+    border-radius: 10px;
+    padding:1em;
+}
+span#nf_search a:hover span{
+    visibility:visible;
+    width: 300px;
+    top: 60px;
+    right: 360px;
+}
+
+span#nf_search a:hover span{
+    right: 360px;
+}
+
+/*------------------------------1200px DEVICES----------------------------*/
+@media only screen and (max-width: 1200px) {
+
+    .Rtable--2cols > .Rtable-resultsText { width: 100%; text-align: center;}
+
+    span#nf_search a:hover span{
+        right: 180px;
+    }
+}
+
+
+/*------------------------------900px DEVICES----------------------------*/
+@media only screen and (max-width: 900px) {
+
+	/* Force table to not be like tables anymore */
+        .Rtable--2cols > .Rtable-cell  { width: 100%; }
+        .Rtable--2cols > .Rtable-data  { width: 100%; }
+        
+        .Rtable--4cols > .Rtable-geo  { margin-top: 5px; margin-bottom: 5px;}
+        .Rtable--6cols > .Rtable-geo  { width: 50%; margin-top: 5px; margin-bottom: 5px;}
+        
+        .Rtable--2cols > .Rtable-radio  { margin-top: 5px; margin-bottom: 5px; float:left;}
+        .Rtable--2cols > .Rtable-radioText  { margin-top: 5px; margin-bottom: 5px; text-align: right;}
+        .Rtable--6cols > .Rtable-radio  { min-width: 50%; margin-top: 5px; margin-bottom: 5px;}
+        
+        
+        .Rtable--2cols > .Rtable-results { width: 100%; }
+        .Rtable--2cols > .Rtable-resultsText { width: 100%; text-align: center;}
+        
+        .Rtable--2cols > .Rtable-map  { width: 100%; } 
+        
+        .Rtable--3cols > .Rtable-displayColor  { width: 100%; } 
+        .Rtable--3cols > .Rtable-displaySettings  { width: 100%; } 
+        
+        .Rtable-cell {text-align: left;}
+        
+        .Ftable--4cols > .Rtable-cell  { width: 500px; max-width: 100%; margin-top: 5px; margin-bottom: 5px;}
+        .Ftable--4cols > .Rtable-data  { width: 500px; max-width: 100%; margin-top: 5px; margin-bottom: 5px;}
+        
+        .Ftable--10cols > .Ftable-cell  { width: 20%; }
+        .Ftable--10cols > .Ftable-data  { width: 12%; max-width: 80px;}
+        
+        .Rtable--2cols > .Rtable-color  { width: 50%; margin: 0 auto; min-width: 120px;}
+        .Rtable--2cols > .Rtable-colorText  { width: 50%; margin: 0 auto; text-align: right;}
+        
+        .Rtable--2cols > .Rtable-feedback  { width: 20%;}
+        .Rtable--2cols > .Rtable-logo  { width:80%;}
+        
+        width:600px; 
+        max-width:100%;
+        
+	.Rtable--collapse  {
+        display: block;
+   
+        }
+        
+	.nf-div {
+		max-width: 710px;
+		margin: auto;
+	}
+
+	.nf-td-text {
+		min-height: 30px;
+		max-width: 70%;
+		max-width: 450px;
+		margin-left: 120px;
+	}
+	
+	.nf-td-hr {
+		max-width: 400px;
+	}
+	
+	.nf-td-img {
+	display: block;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 0px;
+	}
+        
+        span#nf_search a:hover span{
+            right: 125px;
+        }
+
+}
+
+/*------------------------------700px DEVICES----------------------------*/
+@media only screen and (max-width: 700px) {
+    .Rtable--3cols > .Rtable-map  { width: 100%; margin: 0 auto; }
+    .Rtable--3cols > .Rtable-data  { width: 100%; display: block; }
+    
+        
+    .Rtable--2cols > .Rtable-results{
+        margin: 0 auto !important;
+        max-width: 30%;
+        text-align: center;
+        padding-bottom: 10px;
+        padding-left: 0px;
+    }
+    .Rtable--2cols > .Rtable-resultsText { width: 100%;}
+    .Rtable--3cols > .Rtable-frame { width: 100%; }
+    
+    span#nf_search a:hover span{
+        right: 100px;
+    }
+}
+
+/*------------------------------------DEVICE 620px-------------------------------------*/
+
+@media only screen and (max-width: 620px) {
+    .Rtable--6cols > .Rtable-data  { width: 50%; display: block; }
+    .Rtable--6cols > .Rtable-check  { width: 15%; display: block; }
+    .Rtable--6cols > .Rtable-icon  { width: 15%; display: block; }
+    
+    .Rtable--2cols > .Rtable-feedback  { width: 100%;}
+    .Rtable--2cols > .Rtable-logo  { width:100%;}
+    
+        .Rtable--2cols > .Rtable-results{
+            max-width:40%;
+        }
+        span#nf_search a:hover span{
+            right: 50px;
+        }
+}
+
+/*------------------------------------DEVICE 500px-------------------------------------*/
+
+@media only screen and (max-width: 500px) {
+    
+        .Rtable--2cols > .Rtable-results{
+            max-width:50%;
+        }
+        .Ftable--10cols > .Ftable-cell  { width: 50%; }
+        .Ftable--10cols > .Ftable-data  { width: 50%; max-width: 80px;}
+        
+        span#nf_search a:hover span{
+            right: 30px;
+        }
+        
+}
+
+/*------------------------------------DEVICE 400px-------------------------------------*/
+
+@media only screen and (max-width: 400px) {
+    
+        .Rtable--2cols > .Rtable-results{
+            max-width:60%;
+            text-align: right;
+            align-content: center;
+            padding-bottom: 0 auto;
+        }
+        span#nf_search a:hover span{
+            right: -25px;
+        }
+}
+
+/*------------------------------------DEVICE 300px-------------------------------------*/
+
+@media only screen and (max-width: 300px) {
+    
+        .Rtable--2cols > .Rtable-results{
+            max-width:70%;
+        }
+}
+
+/*------------------------------------DEVICE 200px-------------------------------------*/
+
+@media only screen and (max-width: 300px) {
+    
+        .Rtable--2cols > .Rtable-results{
+            max-width:80%;
+        }
+}
+
+
+        
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    top: -100px;
+    left: -50px;
+}
+
+#loading { 
+	display: none;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background:rgba(255,255,255,0.8);
+	z-index:1000;
+	}  
+
+#loadingcontent
+{
+	display:table;
+	position:relative;
+	left:50%;
+	top:50%;
+	width:100%;
+	height:100%;
+}  
+#loadingspinner
+{
+	display: table-cell;
+	vertical-align: middle;
+	width:100%;
+	text-align: center;
+	font-size:larger;
+	padding-top:80px;
+}
+
+/*------------------------------IMAGE HOVER FACEBOOK---------------------------------*/
+
+div#photo_container{
+    height:auto;
+    position:relative;
+    /*margin:1.563em auto;*/
+}
+
+div#photo_container a{
+    text-decoration:none;
+    color:black;
+    cursor:default;
+    font-weight:normal;
+}
+
+div#photo_container a span{
+    position: absolute;
+    visibility:hidden;
+    text-align: center;
+    background:#ffe6f3;
+    color: #5cb85c;
+    font-weight: bold;
+    border-radius: 5px;
+    padding:5px 10px;
+}
+div#photo_container a:hover span{
+    visibility:visible;
+    top: 0px;
+    left: 0px;
+}
+
+/*------------------------------TEXT HOVER Include Global---------------------------------*/
+
+div#left_container{
+    height:auto;
+    position:relative;
+    /*margin:1.563em auto;*/
+}
+
+div#left_container a{
+    text-decoration:none;
+    color:black;
+    cursor:default;
+    font-weight:normal;
+}
+
+div#left_container a span{
+    position: absolute;
+    visibility:hidden;
+    text-align: left;
+    font-size: 85%;
+    background:#808080;
+    color: #FFF;
+    border-radius: 10px;
+    padding:1em;
+}
+div#left_container a:hover span{
+    visibility:visible;
+    width: 300px;
+    top: -140px;
+    left: -24px; 
+}
+
+/*------------------------------TEXT HOVER Include Geo---------------------------------*/
+
+div#middle_container{
+    height:auto;
+    position:relative;
+    /*margin:1.563em auto;*/
+}
+
+div#middle_container a{
+    text-decoration:none;
+    color:black;
+    cursor:default;
+    font-weight:normal;
+}
+
+div#middle_container a span{
+    position: absolute;
+    visibility:hidden;
+    text-align: left;
+    font-size: 85%;
+    background:#808080;
+    color: #FFF;
+    border-radius: 10px;
+    padding:1em;
+}
+div#middle_container a:hover span{
+    visibility:visible;
+    width: 300px;
+    top: -155px;
+    left: -104px; 
+}
+
+/*------------------------------TEXT HOVER Geo Restrict---------------------------------*/
+
+div#right_container{
+    height:auto;
+    position:relative;
+    /*margin:1.563em auto;*/
+}
+
+div#right_container a{
+    text-decoration:none;
+    color:black;
+    cursor:default;
+    font-weight:normal;
+}
+
+div#right_container a span{
+    position: absolute;
+    visibility:hidden;
+    text-align: left;
+    font-size: 85%;
+    background:#808080;
+    color: #FFF;
+    border-radius: 10px;
+    padding:1em;
+}
+div#right_container a:hover span{
+    visibility:visible;
+    width: 300px;
+    top: -155px;
+    left: -212px; 
+}
+
+
+/****************************** SIDENAV HOVER***************************/
+
+div#sidenav_container{
+    padding-top: 5px;
+    height:auto;
+    position:relative;
+    height: 100%;
+    /*margin:1.563em auto;*/
+}
+
+div#sidenav_container a{
+    text-decoration:none;
+    color:black;
+    cursor:default;
+    font-weight:normal;
+    height: 100%;
+}
+
+div#sidenav_container a span{
+    position: absolute;
+    visibility:hidden;
+    text-align: left;
+    font-size: 85%;
+    background:#ffe6f3;
+    color: #5cb85c;
+    border-radius: 10px;
+    padding:1em;
+}
+div#sidenav_container a:hover span{
+    visibility:visible;
+    width: 100%;
+    margin: 5px;
+    top: 60px;
+    left: -20px; 
+    z-index: 1000;
+    height: 100%;
+}
+
+div#sidenav_button{
+    height:auto;
+    position:relative;
+    /*margin:1.563em auto;*/
+}
+
+div#sidenav_button a{
+    text-decoration:none;
+    color:black;
+    cursor:default;
+    font-weight:normal;
+}
+
+div#sidenav_button a span{
+    position: absolute;
+    visibility:hidden;
+    text-align: left;
+    font-size: 85%;
+    background:#ffe6f3;
+    color: #5cb85c;
+    border-radius: 10px;
+    padding:1em;
+}
+div#sidenav_button a:hover span{
+    visibility:visible;
+    width: 95%;
+    margin: 5px;
+    top: 50px;
+    left: -0px; 
+    z-index: 999;
+}
+
+/****************************** BUTTON WORKS ****************************/
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/***************************** Slider Search *****************************/
+
+/* The side navigation menu */
+.slidenav {
+    height: 100%; /* 100% Full-height */
+    z-index: 999; /* Stay on top */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: absolute;
+    /*position: fixed; /* Stay in place */
+    /*top: 0;
+    left: 0;*/
+    background-color: #f8f8f8; /* off white*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden; /* Disable vertical scroll */
+    padding-top: 23px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    border-radius:0px 0px 0px 100px;
+}
+
+    .slidenav textarea {
+        width: 95%;
+        margin: 0 auto;
+        margin-left: 10px;
+    }
+
+/* The navigation menu links */
+.slidenav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.slidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.slidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+    color:#e40079
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .slidenav {padding-top: 15px;}
+    .slidenav a {font-size: 18px;}
+}
+/***************************** Sidenav Results *****************************/
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    z-index: 999; /* Stay on top */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: absolute;
+    /*position: fixed; /* Stay in place */
+    /*top: 0;
+    left: 0;*/
+    background-color: #f8f8f8; /* off white*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden; /* Disable vertical scroll */
+    padding-top: 50px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    border-width: 10px;
+    border-color: #e0e0e0;
+    color: black;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    /* padding: 8px 8px 8px 10px;*/
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+    color:#e40079
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/***************************** SideSettings Display *****************************/
+
+/* The side navigation menu */
+.sideSettings {
+    height: 100%; /* 100% Full-height */
+    z-index: 999; /* Stay on top */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: absolute;
+    /*position: fixed; /* Stay in place */
+    /*top: 0;
+    left: 0;*/
+    background-color: #f8f8f8; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden; /* Disable vertical scroll */
+    padding-top: 50px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    border-width: 10px;
+    border-color: #e0e0e0;
+    color: black;
+}
+
+/* The navigation menu links */
+.sideSettings a {
+    /* padding: 8px 8px 8px 10px;*/
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sideSettings a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sideSettings .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+    color:#e40079
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sideSettings {padding-top: 15px;}
+    .sideSettings a {font-size: 18px;}
+}
+
+
+/*********************************END SLIDER****************************************/
+
+/*********************************START FEEDBACK/RATING*****************************/
+
+.animated {
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
+    transition: height 0.2s;
+}
+
+.stars
+{
+    margin: 20px 0;
+    font-size: 24px;
+    color: #d17581;
+}
+
+/*********************************BUTTONS FOR YAHWEH*******************************/
+
+.toggle{
+    margin-left: 40px;
+}
+
+.bton {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.bton-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c
+}
+.bton-success.focus,
+.bton-success:focus {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #255625
+}
+.bton-success:hover {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439
+}
+.bton-success.active,
+.bton-success:active,
+.open>.dropdown-toggle.bton-success {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439
+}
+
+input[type=button] {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    width: 100%;
+    max-width: 100%;
+    border-width: 5px; 
+    border-style: solid;
+    border-color: #e0e0e0;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
+
+.button-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c
+}
+.button-success.focus,
+.button-success:focus {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #255625
+}
+.button-success:hover {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439
+}
+.button-success.active,
+.button-success:active,
+.open>.dropdown-toggle.button-success {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439
+}
+
+#reset_search, #delete_feeds, #reset_display {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border-width: 5px; 
+    border-style: solid;
+    border-color: #e0e0e0;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
+
+#reset_display-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c
+}
+#reset_display-success.focus,
+#reset_display-success:focus {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #255625
+}
+#reset_display-success:hover {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439
+}
+#reset_display-success.active,
+#reset_display-success:active,
+.open>.dropdown-toggle#reset_display-success {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439
+}
